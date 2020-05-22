@@ -212,7 +212,44 @@ $(document).ready(function(){
             },
         ]
     }); 
+    
+    $('.js-slider-about').slick({
+        infinite: true,
+        arrows:true,
+        dots:false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade:false,
+        autoplay:false,
+        appendArrows:'.block-about__col .slider-arrows-wrapper',
+        responsive: [
+            
+            {
+                breakpoint: 9999,
+                settings: "unslick"
+            },
+            {
+                breakpoint: 992,
+                settings: {
+                    slidesToShow: 2, 
+                    adaptiveHeight:true
+                }
+            },
+            {
+                breakpoint: 640,
+                settings: {
+                    slidesToShow: 1, 
+                    adaptiveHeight:true
+                }
+            },
+        ]
+    }); 
+    
+    $(window).on('resize orientationchange', function() {
+      $('.js-slider-about').slick('resize');
+    });
      
+    $(".form-phone").mask("+7 (999) 999-99-99");
     
     $("#form-contact").validate({
          errorElement:'div',
@@ -229,30 +266,18 @@ $(document).ready(function(){
 				city: "required"
 			},
 			messages: {
-				name: "",
-				phone: "",
-				email: "",				
-                city: ""				
+				name: "Необходимо заполнить Имя",
+				phone: "Необходимо заполнить Телефон",
+				email: {
+					required: "Необходимо заполнить E-mail",
+					email: "Введите корректный E-mail"
+				},				
+                city: "Необходимо заполнить Город"				
 			},
             submitHandler:  function(form) { 
-            form.submit(); 
-        }
+                form.submit(); 
+            }
      });
-    
-    var $form = $("#form-contact");
-    var $submitbutton = $("#form-contact .btn");
-
-    $form.on("blur keyup change", ".form-input", function(event) {
-      if ($form.valid()) {
-        $submitbutton.prop('disabled', false);  
-        
-      } else {
-        $submitbutton.prop("disabled", "disabled");
-      }
-    });
-    
-    
-    $(".form-phone").mask("+7 (999) 999-99-99");
     
     
     $("#form-contact-2").validate({
@@ -265,26 +290,13 @@ $(document).ready(function(){
 				phone: "required"                
 			},
 			messages: {
-				name: "",
-				phone: ""			
+				name: "Необходимо заполнить Имя",
+				phone: "Необходимо заполнить Телефон",		
 			},
             submitHandler:  function(form) { 
             form.submit(); 
         }
      });
-    
-    var $form2 = $("#form-contact-2");
-    var $submitbutton2 = $("#form-contact-2 .btn");
-
-    $form2.on("blur keyup change", ".form-input", function(event) {
-      if ($form2.valid()) {
-        $submitbutton2.prop('disabled', false);  
-        
-      } else {
-        $submitbutton2.prop("disabled", "disabled");
-      }
-    });
-    
     
     $("#form-contact-3").validate({
          errorElement:'div',
@@ -301,28 +313,20 @@ $(document).ready(function(){
 				comment: "required"
 			},
 			messages: {
-				name: "",
-				phone: "",
-				email: "",				
-                comment: ""				
+				name: "Необходимо заполнить Имя",
+				phone: "Необходимо заполнить Телефон",
+				email: {
+					required: "Необходимо заполнить E-mail",
+					email: "Введите корректный E-mail"
+				},				
+                comment: "Необходимо заполнить Комментарий"					
 			},
             submitHandler:  function(form) { 
             form.submit(); 
         }
      });
     
-    var $form3 = $("#form-contact-3");
-    var $submitbutton3 = $("#form-contact-3 .btn");
-
-    $form3.on("blur keyup change", ".form-input", function(event) {
-      if ($form3.valid()) {
-        $submitbutton3.prop('disabled', false);  
-        
-      } else {
-        $submitbutton3.prop("disabled", "disabled");
-      }
-    });
-    
+   
     
  });
 

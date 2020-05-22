@@ -69,8 +69,7 @@ ul {
             background: $color-white;
             color: #121827;
         }
-        &:disabled {background: #C0B0A3; color:#fff; cursor: default; }
-        &:disabled:hover { background: #C0B0A3; }
+        
     }
     &_grey-border{
         border: 0.6px solid rgba($color-white, 0.6);
@@ -81,8 +80,7 @@ ul {
             background: rgba(18, 24, 39, 0.3);
             color: #121827;
         }
-        &:disabled {background: #C0B0A3; color:#fff; cursor: default; }
-        &:disabled:hover { background: #C0B0A3; }
+        
     }
     &_dark{
         border-color: #121827;
@@ -92,8 +90,11 @@ ul {
             background: #242E46;
             border-color: #242E46;
         }
-        &:disabled {opacity: 0.5; cursor: default; }
-        &:disabled:hover { }
+        
+    }
+    &_light{
+        background: #C0B0A3; color:#fff; border-color: #C0B0A3;
+        &:hover { background: #fff; color: #121827; border-color: #fff;}
     }
     
    
@@ -400,16 +401,7 @@ ul {
             width: 390px;
         }
         &:nth-child(2){
-            width: calc(100% - 405px);
-            display: -webkit-box;
-            display: -moz-box;
-            display: -ms-flexbox;
-            display: -webkit-flex;
-            display: flex !important;
-            flex-direction: row;
-            justify-content:space-between;
-            margin: 0 -15px;
-            flex-wrap: wrap;
+            width: calc(100% - 405px);            
             padding-top: 13px;
             padding-right: 80px;
         }
@@ -417,6 +409,21 @@ ul {
     .text p{
             padding-bottom: 55px;
     }
+    .slider-arrows-wrapper{
+        display: none;
+    }
+}
+
+.slider-about{
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex !important;
+    flex-direction: row;
+    justify-content:space-between;
+    margin: 0 -15px;
+    flex-wrap: wrap;
 }
 
 .title{
@@ -1025,20 +1032,22 @@ ul {
     }
     label.error{
         position: absolute;
-        bottom: 14px;
-        color: $color-red;
+        bottom: 40px;
+        color: #df4e49;
         display: none;
-        font-size: 13px;
-
+        font-size: 12px;
+        width: 100%;
+        letter-spacing: 0;
     }
 
     div.error{
         position: absolute;
-        bottom: 14px;
-        color: $color-red;
+        bottom: 40px;
+        color: #df4e49;
         display: none;
-        font-size: 13px;
+        font-size: 12px;
         width: 100%;
+        letter-spacing: 0;
     }   
     
 }
@@ -1214,6 +1223,10 @@ ul {
         margin-left: -30px;
         margin-right: -30px;
     }
+
+    .block-about__col:nth-child(2){
+        padding-right: 30px;
+    }
 }
 
 
@@ -1268,7 +1281,7 @@ ul {
     }
     .block-about__col:nth-child(2){
         width: 100%;
-        padding-right: 0;
+        padding-right: 15px;
     }
     .block-about{
         padding-right: 15px;
@@ -1471,6 +1484,24 @@ ul {
         left: auto;
         right: 35px;
     }
+    .form div.error, .form label.error{
+        bottom: 20px;
+    }
+
+    .block-about .slider-arrows-wrapper{
+        display: block;
+        position: absolute;
+        bottom: -40px;
+        right: 15px;
+    }
+    .item-about{
+        text-align: center;
+        p{
+            margin-left:auto;
+            margin-right: auto;
+            max-width: 400px;
+        }
+    }
 }
 
 
@@ -1561,6 +1592,9 @@ ul {
     .item-review__photo {
         height: 550px;
     }
+    .block-about .slider-arrows-wrapper{
+        bottom: -20px;
+    }
 }
 
 
@@ -1583,7 +1617,7 @@ ul {
         width: 100%;
     }   
     .item-about p {
-        max-width: 100%;
+        max-width: 400px;
     }
     .item-photo__title{
         font-size: 20px;
@@ -1607,6 +1641,16 @@ ul {
     }
     .top-slider__slide .wrapper{
         padding-bottom: 30px;
+    }
+    .section-about .wrapper:before{
+        right: 0;
+    }
+    .block-about{
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+    .block-about .slider-arrows-wrapper{
+        right: 0;
     }
 }
 
