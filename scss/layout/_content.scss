@@ -106,15 +106,6 @@ ul {
 
 .section-top{
     margin-bottom: -150px;
-    &:hover{
-        .top-slider{    
-            &__slide{
-                &:before{
-                    opacity: 1;
-                 }                
-            }
-        }
-    }
 }
 .block-top-slider{
    position: relative;   
@@ -1163,6 +1154,17 @@ ul {
     }
 }
 
+@media screen and (max-width: 1360px){
+   
+    .item-team__photo {
+        width: 840px;
+    }
+    .item-team__photo img {
+        width: 1100px;
+        margin-left: -220px;
+    }
+}
+
 @media screen and (max-width: 1140px){
     
     .section{
@@ -1501,6 +1503,9 @@ ul {
             margin-right: auto;
             max-width: 400px;
         }
+    }
+    .block-contact .item-phone {
+        width: 50%;
     }
 }
 
