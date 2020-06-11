@@ -470,7 +470,7 @@ ul {
 }
 .item-photo{
     display: block;
-    height: 1000px;
+    height: 750px;
     width: 100%;
     background: no-repeat center center;
     background-size: cover;
@@ -1058,7 +1058,7 @@ ul {
 }
 .item-factory{
     display: block;
-    height:850px;
+    height:750px;
     width: 100%;
     background: no-repeat center center;
     background-size: cover;
@@ -1131,10 +1131,6 @@ ul {
         padding-bottom: 150px;
     }
    
-    .item-photo{
-        height: 900px;
-    }
-    
     .block-slider-team .slider-arrows-wrapper{
         left: 595px;
     }
@@ -1166,9 +1162,6 @@ ul {
     }
 
 
-    .item-factory{
-        height: 750px;
-    }
 }
 
 @media screen and (max-width: 1360px){
@@ -1187,9 +1180,7 @@ ul {
     .section-about{
         padding-bottom: 50px;
     }
-    .item-photo {
-        height: 800px;
-    }
+    
     .item-factory {
         height: 650px;
     }
