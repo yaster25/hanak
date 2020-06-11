@@ -15,13 +15,17 @@
     
     <!-- BEGIN BODY -->
     <div class="main-wrapper">
-   
-    <section class="section-top" id="top">  
         
         <!-- BEGIN HEADER -->
         <header class="header" id="header">
             <div class="wrapper">
                 <div class="header-col">
+                    <div class="logo">
+                        <img src="img/logo.svg?ver1.0" alt="">
+                    </div>
+                </div>
+                <div class="header-col">
+                    <a href="#popup-call" class="btn btn_white-border" data-fancybox>Обратный звонок</a>
                     <a href="#popup-menu" id="hamburger" class="mobile-trigger" data-fancybox>
                         <span class="hamburger hamburger--collapse">
                             <span class="hamburger-box">
@@ -31,43 +35,35 @@
                         <span class="hamburger-text">меню</span>
                     </a>
                 </div>
-                <div class="header-col">
-                    <div class="logo">
-                        <img src="img/logo.svg?ver1.0" alt="">
-                    </div>
-                </div>
-                <div class="header-col">
-                    <a href="#popup-call" class="btn btn_white-border" data-fancybox>Обратный звонок</a>
-                </div>
             </div>
         </header>
          <!-- HEADER EOF   -->
-        
-        
+   
+    <section class="section-top" id="top">          
         <div class="block-top-slider">
             <div class="top-slider js-top-slider">
-                <div class="top-slider__slide" style="background-image: url(img/bg-screen-top-01.jpg?ver1.0)">
-                    <div class="wrapper">
-                        <div class="top-slider__title wow fadeInUp">Антикризисное предложение в мае</div>
-                        <div class="top-slider__hr wow fadeInUp"><span></span></div>
-                        <div class="top-slider__text wow fadeInUp">Столешница в подарок при покупке кухни до 31.05.20</div>
-                    </div>
-                </div>
                 <div class="top-slider__slide" style="background-image: url(img/bg-screen-top-02.jpg?ver1.0)">
                     <div class="wrapper">
                         <div class="top-slider__title wow fadeInUp">Чешские кухни и мебель высочайшего качества</div>
-                        <div class="top-slider__hr wow fadeInUp"><span></span></div>
                         <div class="top-slider__text top-slider__text-2 wow fadeInUp">Мы не просто делаем кухни. Мы создаем комнаты для самых важных моментов в вашей жизни</div>
+                        <a href="#" class="btn btn_white wow fadeInUp">Смотреть кухни</a>
                     </div>
                 </div>
+                <div class="top-slider__slide" style="background-image: url(img/bg-screen-top-01.jpg?ver1.0)">
+                    <div class="wrapper">
+                        <div class="top-slider__title wow fadeInUp">Антикризисное предложение в мае</div>
+                        <div class="top-slider__text wow fadeInUp">Столешница в подарок при покупке кухни до 31.05.20</div>
+                        <a href="#" class="btn btn_white wow fadeInUp">Смотреть кухни</a>
+                    </div>
+                </div>
+                
             </div>
-            <div class="top-slider-arrows slider-arrows-wrapper wow fadeInLeft"></div>
+            <div class="top-slider-arrows"><div class="wrapper"></div></div>            
         </div>
     </section>
         
     <section class="section section-about" id="about">
             <div class="wrapper">
-                <a href="#about" class="link-down scroll"></a> 
                 <div class="block-about">
                     <div class="block-about__col wow fadeInUp">
                         <h1 class="title">Мы все продумали для Вас</h1>
@@ -105,45 +101,55 @@
                                 <p>Наша фабрика в Чехии работает как часы, не снижая объемов. И пока ситуация в мире стабилизируется, к Вам уже приедет готовая кухня. Удобно, не правда ли?</p>
                             </div>                        
                         </div>
-                        <div class="slider-arrows-wrapper"></div>
+                        <div class="slider-arrows-wrapper slider-arrows-2"></div>
                     </div>
                 </div>
             </div>
         </section>    
         
     <section class="section-photo">
-        <div class="wrapper">
-            <div class="block-slider-photo">
-                <div class="slider-photo js-slider-photo  wow fadeInLeft">
-                    <div class="slider-photo__slide">
+        
+            <div class="block-slider-photo  wow fadeIn">
+                <div class="slider-photo js-slider-photo ">
+                    <div class="slider-photo__slide">                        
                         <div class="item-photo" style="background-image: url('img/image-slide-01.jpg?ver1.0')">
+                            <div class="wrapper">
                             <div class="item-photo__info">
                                 <div class="item-photo__title">Кухня в рустикальном стиле</div>
                                 <p>Кухня в рустикальном стиле с матовыми фасадами</p>
+                            </div>
                             </div>
                         </div>
                     </div>
                     <div class="slider-photo__slide">
                         <div class="item-photo" style="background-image: url('img/image-slide-02.jpg?ver1.0')">
+                            <div class="wrapper">
                             <div class="item-photo__info">
                                 <div class="item-photo__title">Интерьер в белом глянцевом лаке</div>
                                 <p>Интерьер в белом глянцевом лаке и шпоне дуб рустик с дверями Millenium</p>
+                            </div>
                             </div>
                         </div>
                     </div>
                     <div class="slider-photo__slide">
                         <div class="item-photo" style="background-image: url('img/image-slide-03.jpg?ver1.0')">
+                            <div class="wrapper">
                             <div class="item-photo__info">
                                 <div class="item-photo__title">Интерьер в стиле неоклассика romance</div>
                                 <p>Интерьер в стиле неоклассика romance</p>
                             </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="slider-arrows-wrapper  wow fadeInRight"></div>
-                <div class="slider-num"><span>01</span>/03</div>
+                <div class="block-slider-photo-arrows">
+                    <div class="wrapper">
+                        <div class="slider-arrows-wrapper wow fadeInRight"></div>
+                    </div>
+                </div>
+                
             </div>
-        </div>    
+   
     </section> 
         
         <section class="section section-news" id="news">
@@ -173,38 +179,53 @@
                                     <div class="item-news__text">На этой неделе собрано: 8 новых кухонь. Смотрите актуальные видео в нашем Инстаграме</div>
                                 </div>
                             </div>
-                            <div class="slider-news__slide">
-                                <div class="item-news">
-                                    <div class="item-news__date">12.05.20</div>
-                                    <div class="item-news__title">Карантин в Чехии</div>
-                                    <div class="item-news__text"> Чехии сняты ограничения, связанные с карантином. Шоурумы HANAK в Чехии открыты</div>
-                                </div>
-                            </div>
-                            <div class="slider-news__slide">
-                                <div class="item-news">
-                                    <div class="item-news__date">29.04.20</div>
-                                    <div class="item-news__title">Поставка из Чехии</div>
-                                    <div class="item-news__text">Производство в Чехии работает, не снижая объемов, доставка выполняется строго в соответствии с графиком. Склад в Москве заполнен и отгружает заказы</div>
-                                </div>
-                            </div>
-                            <div class="slider-news__slide">
-                                <div class="item-news">
-                                    <div class="item-news__date">15.05.20</div>
-                                    <div class="item-news__title">Сборка на объектах</div>
-                                    <div class="item-news__text">На этой неделе собрано: 8 новых кухонь. Смотрите актуальные видео в нашем Инстаграме</div>
-                                </div>
-                            </div>
+                            
                         </div>                          
                     </div>                    
-                    <div class="slider-arrows-wrapper"></div>
+                    <div class="slider-arrows-wrapper  slider-arrows-2"></div>
                 </div>
                 
             </div>
         </section>
         
+        <section class="section section-photos" id="photos">
+            <div class="wrapper">
+                <h2 class="title wow fadeInUp">Фотографии с фабрики</h2>
+                <div class="text wow fadeInUp">Благодаря многолетнему опыту, успешному стратегическому управлению и обеспечению безопасности своих сотрудников, фабрика HANAK NABYTEK и сегодня работает на полную мощность, продолжает развиваться и расширять производство. Все это гарантирует высокое качество и надежность мебели, а главное выполнение фабрикой всех своих обязательств перед клиентами. Уже 30 лет фабрика HANAK NABYTEK воплощает мечты заказчиков в реальность.</div>
+            </div>
+            
+            <div class="block-slider-factory  wow fadeIn">
+                <div class="slider-factory js-slider-factory ">
+                    <div class="slider-factory__slide">                        
+                        <div class="item-factory" style="background-image: url('img/image-factory-01.jpg?ver1.0')"></div>
+                    </div>
+                    <div class="slider-factory__slide">   
+                        <div class="item-factory" style="background-image: url('img/image-factory-02.jpg?ver1.0')"></div>
+                    </div>
+                    <div class="slider-factory__slide"> 
+                        <div class="item-factory" style="background-image: url('img/image-factory-03.jpg?ver1.0')"></div>
+                    </div>
+                    <div class="slider-factory__slide"> 
+                        <div class="item-factory" style="background-image: url('img/image-factory-04.jpg?ver1.0')"></div>
+                    </div>
+                    <div class="slider-factory__slide"> 
+                        <div class="item-factory" style="background-image: url('img/image-factory-05.jpg?ver1.0')"></div>
+                    </div>
+                    <div class="slider-factory__slide"> 
+                        <div class="item-factory" style="background-image: url('img/image-factory-06.jpg?ver1.0')"></div>
+                    </div>
+                </div>
+                <div class="block-slider-factory-arrows">
+                    <div class="wrapper">
+                        <div class="slider-arrows-wrapper wow fadeInRight"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <section class="section section-why section-color" id="why">
             <div class="wrapper">
-                <h2 class="title text-center wow fadeInUp">ПОЧЕМУ HANAK</h2>
+                <h2 class="title wow fadeInUp">ПОЧЕМУ HANAK</h2>
             </div>
             <div class="block-slider-advantages">
                 <div class="wrapper">
@@ -253,90 +274,101 @@
                             </div>
                         </div> 
                     </div>
+                    <div class="slider-arrows-wrapper slider-arrows-2  wow fadeInRight"></div>
                 </div>
-                <div class="slider-arrows-wrapper slider-arrows-2  wow fadeInRight"></div>
+                
                 
             </div>
         </section>
         
         <section class="section section-team section-color" id="team">
-            <div class="wrapper">
-                <div class="block-team">
-                    <h3 class="title  wow fadeInUp">Наша команда</h3>
-                    <div class="text wow fadeInUp">
-                        <p>Сейчас самое время исключить возможные риски. Обратитесь к профессионалам своего дела. 26 лет работаем для вас</p>
-                    </div>   
-                </div>
-             </div>   
-            <div class="block-slider-team">
-                    <div class="slider-team js-slider-team">
-                        <div class="slider-team__slide">
-                            <div class="wrapper">
-                            <div class="item-team">
-                                <div class="item-team__text wow fadeInLeft">
-                                    <div class="item-team__name">Татьяна Комарова <span>Генеральный директор HANAK в России</span></div>
-                                    <div class="item-team__info">Географ по образованию, маркетолог по профессии, исследователь и путешественник по призванию души, Татьяна продолжает дело своего отца,  который в 1994 году начал привозить в Россию кухни из Чехии. В 1998-м было положено начало сотрудничеству с фабрикой HANAK, которое, благодаря упорной работе и энергии Татьяны, переросло в крепкий и успешный союз.</div>
-                                </div>
-                                <div class="item-team__photo  wow fadeInRight">
-                                    <img src="img/photo-team-01-2.jpg?ver1.0" alt="">
-                                </div>
-                            </div>
-                            </div>
-                        </div>
-                        
-                        <div class="slider-team__slide">
-                            <div class="wrapper">
-                            <div class="item-team">
-                                <div class="item-team__text wow fadeInLeft">
-                                    <div class="item-team__name">Иван Шаповалов<span>Главный дизайнер</span></div>
-                                    <div class="item-team__info">Настоящий профессионал своего дела. Иван закончил МГХПУ им. Строганова и в Британскую высшую школу дизайна. Опыт в дизайне - 22 года, из которых 19 - в компании HANAK. Иван очень любит свою работу и считает, что каждый проект по-своему уникален, главное, чтобы он по-настоящему нравился заказчику.</div>
-                                </div>
-                                <div class="item-team__photo wow fadeInRight"><img src="img/photo-team-03.jpg?ver1.0" alt=""></div>
-                            </div>
-                            </div>
-                        </div>
-                        
-                        <div class="slider-team__slide">
-                            <div class="wrapper">
-                            <div class="item-team">
-                                <div class="item-team__text wow fadeInLeft">
-                                    <div class="item-team__name">Елена Трофимова<span>Ведущий дизайнер</span></div>
-                                    <div class="item-team__info">Лена абсолютно выдающийся специалист своего дела. Дизайн-проекты любых зон интерьера с учетом всех пожеланий, технических особенностей и с невероятным вкусом - это ее конёк.</div>
-                                </div>
-                                <div class="item-team__photo wow fadeInRight"><img src="img/photo-team-04.jpg?ver1.0" alt=""></div>
-                            </div>
-                            </div>
-                        </div>
-                        
-                        <div class="slider-team__slide">
-                            <div class="wrapper">
-                            <div class="item-team">
-                                <div class="item-team__text wow fadeInLeft">
-                                    <div class="item-team__name">Лилия Зимарина <span>Дизайнер-консультант</span></div>
-                                    <div class="item-team__info">Лилия уже более 10 лет успешно проектирует и продает кухни и мебель HANAK в cалонах HANAK Interior Concept в Москве. Неоднократно проходила обучение для повышения квалификации на фабрике HANAK в Чехии. Яркая и жизнерадостная, Лилия умеет найти подход к каждому клиенту.</div>
-                                </div>
-                                <div class="item-team__photo wow fadeInRight"><img src="img/photo-team-02.jpg?ver1.0" alt=""></div>
-                            </div>
-                            </div>
-                        </div>
-                        
-                        <div class="slider-team__slide">
-                            <div class="wrapper">
-                            <div class="item-team">
-                                <div class="item-team__text wow fadeInLeft">
-                                    <div class="item-team__name">Анна Лазутина <span>Директор по региональным продажам</span></div>
-                                    <div class="item-team__info">В продажах с начала второго тысячелетия, с мебелью в премиальном сегменте работает уже 11 лет. Трудоголик.</div>
-                                </div>
-                                <div class="item-team__photo wow fadeInRight"><img src="img/photo-team-05.jpg?ver1.0" alt=""></div>
-                            </div>
-                            </div>
-                        </div>                        
-                    </div>
+            <div class="section-team__left">
                 <div class="wrapper">
-                    <div class="slider-arrows-wrapper slider-arrows-2 wow fadeInUp"></div>
-                </div>
-            </div>    
-            
+                    <div class="block-team">
+                        <h3 class="title  wow fadeInUp">Наша команда</h3>
+                        <div class="text wow fadeInUp">
+                            <p>Сейчас самое время исключить возможные риски. Обратитесь к профессионалам своего дела. 26 лет работаем для вас</p>
+                        </div>   
+                    </div>
+                    
+                    <div class="block-slider-team">
+                        <div class="slider-team js-slider-team">
+                            <div class="slider-team__slide">
+                                <div class="item-team">
+                                    <div class="item-team__text wow fadeInLeft">
+                                        <div class="item-team__name">Татьяна Комарова <span>Генеральный директор HANAK в России</span></div>
+                                        <div class="item-team__info">Географ по образованию, маркетолог по профессии, исследователь и путешественник по призванию души, Татьяна продолжает дело своего отца,  который в 1994 году начал привозить в Россию кухни из Чехии. В 1998-м было положено начало сотрудничеству с фабрикой HANAK, которое, благодаря упорной работе и энергии Татьяны, переросло в крепкий и успешный союз.</div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="slider-team__slide">
+                                    <div class="item-team">
+                                        <div class="item-team__text wow fadeInLeft">
+                                            <div class="item-team__name">Иван Шаповалов<span>Главный дизайнер</span></div>
+                                            <div class="item-team__info">Настоящий профессионал своего дела. Иван закончил МГХПУ им. Строганова и в Британскую высшую школу дизайна. Опыт в дизайне - 22 года, из которых 19 - в компании HANAK. Иван очень любит свою работу и считает, что каждый проект по-своему уникален, главное, чтобы он по-настоящему нравился заказчику.</div>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="slider-team__slide">
+                                    <div class="item-team">
+                                        <div class="item-team__text wow fadeInLeft">
+                                            <div class="item-team__name">Елена Трофимова<span>Ведущий дизайнер</span></div>
+                                            <div class="item-team__info">Лена абсолютно выдающийся специалист своего дела. Дизайн-проекты любых зон интерьера с учетом всех пожеланий, технических особенностей и с невероятным вкусом - это ее конёк.</div>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="slider-team__slide">
+                                    <div class="item-team">
+                                        <div class="item-team__text wow fadeInLeft">
+                                            <div class="item-team__name">Лилия Зимарина <span>Дизайнер-консультант</span></div>
+                                            <div class="item-team__info">Лилия уже более 10 лет успешно проектирует и продает кухни и мебель HANAK в cалонах HANAK Interior Concept в Москве. Неоднократно проходила обучение для повышения квалификации на фабрике HANAK в Чехии. Яркая и жизнерадостная, Лилия умеет найти подход к каждому клиенту.</div>
+                                        </div>
+                                    </div>
+                            </div>
+
+                            <div class="slider-team__slide">
+                                    <div class="item-team">
+                                        <div class="item-team__text wow fadeInLeft">
+                                            <div class="item-team__name">Анна Лазутина <span>Директор по региональным продажам</span></div>
+                                            <div class="item-team__info">В продажах с начала второго тысячелетия, с мебелью в премиальном сегменте работает уже 11 лет. Трудоголик.</div>
+                                        </div>
+                                    </div>
+                            </div>                        
+                        </div>
+                    </div>
+                    
+                 </div>
+            </div>
+            <div class="section-team__right">
+                <div class="block-slider-team-photo">
+                        <div class="slider-team-photo js-slider-team-photo">
+                            <div class="slider-team-photo__slide">                                
+                                <div class="item-team-photo wow fadeInRight" style="background-image: url(img/photo-team-01-2.jpg?ver1.0)"></div>
+                            </div>
+                            <div class="slider-team-photo__slide">                                
+                                <div class="item-team-photo wow fadeInRight" style="background-image: url(img/photo-team-03.jpg?ver1.0)"></div>
+                            </div>
+                            <div class="slider-team-photo__slide">                                
+                                <div class="item-team-photo wow fadeInRight" style="background-image: url(img/photo-team-04.jpg?ver1.0)"></div>
+                            </div>
+                            <div class="slider-team-photo__slide">                                
+                                <div class="item-team-photo wow fadeInRight" style="background-image: url(img/photo-team-02.jpg?ver1.0)"></div>
+                            </div>
+                            <div class="slider-team-photo__slide">                                
+                                <div class="item-team-photo wow fadeInRight" style="background-image: url(img/photo-team-05.jpg?ver1.0)"></div>
+                            </div>
+                        </div>
+                    <div class="block-slider-team-photo-arrows">
+                        <div class="wrapper">
+                            <div class="slider-arrows-wrapper wow fadeInUp"></div>
+                        </div>
+                    </div>
+                </div>                
+            </div>
+           
         </section>
         
         <section class="section section-reviews" id="reviews">
@@ -347,20 +379,21 @@
                         <p>Мы сделали все, чтобы купить кухню в период самоизоляции было не только удобно и безопасно, но и выгодно. Оставайтесь дома, берегите себя и близких</p>
                     </div>   
                 </div>
-            </div>
-             <div class="wrapper wrapper-reviews">   
-                <div class="block-slider-reviews">
-                    <div class="slider-reviews js-slider-reviews">
+            </div>  
+            <div class="block-slider-reviews">
+                <div class="slider-reviews js-slider-reviews">
                         <div class="slider-reviews__slide">
                             <div class="item-review">
                                 <div class="item-review__left wow fadeInLeft">
                                     <div class="item-review__photo" style="background-image: url(img/image-reviews-01.jpg?ver1.0)"></div>
                                 </div>
                                 <div class="item-review__right wow fadeInRight">
+                                    <div class="wrapper">
                                     <div class="item-review__text">
                                         <p>Работать с Hanak одно удовольствие! Я искренне ценю качество мебели фабрик Hanak и Ton! И это не только мой отзыв, но и всех моих заказчиков.</p>                                        
                                     </div>
                                     <div class="item-review__name">Дизайнер Мария Поветкина</div>
+                                    </div>
                                 </div>                                
                             </div>
                         </div>
@@ -370,10 +403,12 @@
                                     <div class="item-review__photo" style="background-image: url(img/image-reviews-02.jpg?ver1.0)"></div>
                                 </div>
                                 <div class="item-review__right wow fadeInRight">
+                                    <div class="wrapper">
                                     <div class="item-review__text">
                                         <p>Спасибо вам за качественную работу. За то, что все было выполнено а срок и без нареканий. Пожалуй, единственный за весь ремонт подрядчик по которому не было нареканий. Теперь все время на кухне )))</p>                                        
                                     </div>
                                     <div class="item-review__name">Андрей</div>
+                                    </div>
                                 </div>                                
                             </div>
                         </div>
@@ -383,23 +418,28 @@
                                     <div class="item-review__photo" style="background-image: url(img/image-review-03.jpg?ver1.0)"></div>
                                 </div>
                                 <div class="item-review__right wow fadeInRight">
+                                    <div class="wrapper">
                                     <div class="item-review__text">
                                         <p>Когда начала искать кухню, была только картинка в воображении: хочу классику, как в моем любимом сериале “Дживс и Вустер”. Выбирала долго, кухня сложная. В других салонах получалось и дольше и дороже, к тому же менеджеры не понимали что я хочу. В общем, обошла несколько производителей, но то самое ощущение, когда мой дом - моя крепость, нашла в HANAK. Белая классическая кухня и, природная гамма севера, все продумано до мельчайших деталей. Понравилось также, что сборщики очень интеллигентные, работают в компании много лет и влюблены в мебель. Сейчас я полностью расслабляюсь на своей кухне, в общем, я провела большую работу, но получила то, что хотела.</p>                                        
                                     </div>
                                     <div class="item-review__name">Елена</div>
+                                    </div>
                                 </div>                                
                             </div>
                         </div>
                         
+                    </div>                    
+                <div class="block-slider-reviews-arrows">
+                    <div class="wrapper">
+                        <div class="slider-arrows-wrapper slider-arrows-2 wow fadeInUp"></div>
                     </div>
-                    <div class="slider-arrows-wrapper slider-arrows-3 wow fadeInUp"></div>
-                </div>    
+                </div>   
             </div>
         </section>
         
         <section class="section section-contact">
             <div class="wrapper">
-                <h3 class="title title_light wow fadeInUp">Закажите бесплатный дизайн-проект</h3>
+                <h3 class="title wow fadeInUp">Закажите бесплатный дизайн-проект</h3>
                 
                 <div class="block-contact">
                     <div class="block-contact__col wow fadeInUp">
@@ -407,23 +447,23 @@
                         <div class="form">
                             <div class="form-row">
                                 <div class="form-col">
-                                    <input type="text" name="name" class="form-input" placeholder="Имя">
+                                    <input type="text" name="name" class="form-input form-input_dark" placeholder="Имя">
                                 </div>
                                 <div class="form-col">
-                                    <input type="text" name="phone" class="form-input form-phone" placeholder="Телефон">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-col">
-                                    <input type="text" name="email" class="form-input" placeholder="Электронная почта">
-                                </div>
-                                <div class="form-col">
-                                    <input type="text" name="city" class="form-input" placeholder="Ваш город">
+                                    <input type="text" name="phone" class="form-input form-input_dark form-phone" placeholder="Телефон">
                                 </div>
                             </div>
                             <div class="form-row">
                                 <div class="form-col">
-                                    <button class="btn btn_light">Оставить заявку</button>
+                                    <input type="text" name="email" class="form-input form-input_dark" placeholder="Электронная почта">
+                                </div>
+                                <div class="form-col">
+                                    <input type="text" name="city" class="form-input form-input_dark" placeholder="Ваш город">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-col">
+                                    <button class="btn btn_dark">Оставить заявку</button>
                                 </div>
                             </div>
                         </div>
@@ -467,7 +507,7 @@
         <div class="wrapper wow fadeIn">
             <div class="footer-col">
                 <span class="logo">
-                    <img src="img/logo.svg?ver1.0" alt="">
+                    <img src="img/logo-dark.svg?ver1.0" alt="">
                 </span>
             </div>
             <div class="footer-col">

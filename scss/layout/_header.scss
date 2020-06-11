@@ -9,10 +9,10 @@ header{
     width: 100%; min-width: 320px; text-align: left; transition: all 0.3s;  z-index: 9999; top:0;
     background: transparent;
     position: fixed;
-    padding: 37px 0;
-    &.fixed{
-        background: rgba(18, 24, 39, 0.95);
+    padding: 39px 0;
+    &.fixed{        
         padding: 15px 0;
+        background: #2E3649;
     }
 }
 
@@ -38,14 +38,10 @@ header{
         }
     }
     &-col{
-        width:33.33%;
         &:nth-child(1){
             text-align: left;
         }
         &:nth-child(2){
-            text-align: center;
-        }
-        &:nth-child(3){
             text-align:right;
         }
     }
@@ -56,6 +52,7 @@ header{
     padding-left: 40px;
     height: 16px;
     line-height: 16px;
+    margin-left: 75px;
 }
 
 .hamburger { display: inline-block; cursor: pointer; transition-property: opacity,-webkit-filter; -webkit-transition-property: opacity,-webkit-filter; transition-property: opacity,filter; transition-property: opacity,filter,-webkit-filter; -webkit-transition-duration: .15s; transition-duration: .15s; -webkit-transition-timing-function: linear; transition-timing-function: linear;  border: 0; margin: 0; overflow: visible; background: transparent;  width: 23px; height: 16px; 
@@ -115,23 +112,26 @@ body.overflow{
     header{
         padding: 25px 0;
     }
+    .mobile-trigger{
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .logo img{
+        width: 140px;
+    }
 }
 
 @media screen and (max-width: 639px) {
-    .header-col:nth-child(3){
-        display: none;
-    }
-    .header .wrapper{
-        flex-direction: row-reverse;
-    }
-    .header-col:nth-child(1) {
-        text-align: right;
-    }
+    
     
 }
 
 @media screen and (max-width: 479px) {
-   
+    header .btn{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 350px) {

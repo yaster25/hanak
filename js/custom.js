@@ -24,7 +24,7 @@ $(document).ready(function(){
         slidesToScroll: 1,
         fade:true,
         autoplay:true,
-        appendArrows:'.top-slider-arrows'
+        appendArrows:'.top-slider-arrows .wrapper'
     });    
     
     /*fixed header*/
@@ -108,12 +108,7 @@ $(document).ready(function(){
         autoplay:false,
         appendArrows:'.block-slider-photo .slider-arrows-wrapper'
     }); 
-    $('.js-slider-photo')
-        .on('afterChange', function(event, slick, currentSlide, nextSlide){
-        var i=currentSlide+1;
-        if(i<10) i='0'+ i;
-            $('.block-slider-photo .slider-num span').html(i);
-    });
+   
     
     $('.js-slider-news').slick({
         infinite: false,
@@ -125,7 +120,10 @@ $(document).ready(function(){
         autoplay:false,
         appendArrows:'.block-slider-news .slider-arrows-wrapper',
         responsive: [
-            
+            {
+                breakpoint: 900,
+                settings: "unslick"
+            },
             {
                 breakpoint: 900,
                 settings: {
@@ -161,7 +159,8 @@ $(document).ready(function(){
             {
                 breakpoint: 900,
                 settings: {
-                    slidesToShow: 2
+                    slidesToShow: 2,
+                    adaptiveHeight:true
                 }
             },{
                 breakpoint: 600,
@@ -175,13 +174,35 @@ $(document).ready(function(){
     
     $('.js-slider-team').slick({
         infinite: true,
+        arrows:false,
+        dots:false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade:true,
+        autoplay:false,   
+        asNavFor: '.js-slider-team-photo', 
+        responsive: [
+            
+            {
+                breakpoint: 992,
+                settings: {
+                    adaptiveHeight:true
+                }
+            },
+        ]
+    }); 
+    
+    $('.js-slider-team-photo').slick({
+        infinite: true,
         arrows:true,
         dots:false,
         slidesToShow: 1,
         slidesToScroll: 1,
         fade:true,
         autoplay:false,
-        appendArrows:'.block-slider-team .slider-arrows-wrapper',
+        focusOnSelect: true,
+        asNavFor: '.js-slider-team', 
+        appendArrows:'.block-slider-team-photo .slider-arrows-wrapper',
         responsive: [
             
             {
@@ -249,6 +270,17 @@ $(document).ready(function(){
       $('.js-slider-about').slick('resize');
     });
      
+    $('.js-slider-factory').slick({
+        infinite: true,
+        arrows:true,
+        dots:false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        fade:false,
+        autoplay:false,
+        appendArrows:'.block-slider-factory .slider-arrows-wrapper'
+    }); 
+    
     $(".form-phone").mask("+7 (999) 999-99-99");
     
     $("#form-contact").validate({
