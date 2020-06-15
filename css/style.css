@@ -756,8 +756,11 @@ ul { list-style: none; }
   .section-about { padding-bottom: 50px; }
   .item-photo { height: 550px; }
   .item-factory { height: 550px; }
+  .section.section-team { align-items: flex-end; }
+  .block-slider-team { height: 550px; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex !important; align-items: center; }
+  .slider-team { max-width: 100%; }
+  .section-team__right { padding-top: 220px; }
   .item-team-photo { height: 550px; }
-  .section-team__left { padding-top: 50px; }
   .item-team__info { max-width: 100%; }
   .block-team { padding-bottom: 20px; }
   .item-review__photo { height: 550px; }
@@ -778,12 +781,13 @@ ul { list-style: none; }
   .top-slider__slide { height: 570px; }
   .block-top-slider { height: 570px; }
   .item-photo { height: 500px; }
-  .section-team__left { padding-top: 20px; }
   .item-team__name { padding-bottom: 20px; }
   .item-team__info { max-width: 100%; font-size: 14px; line-height: 1.7; }
   .item-review__photo { height: 500px; }
   .item-review__text { font-size: 14px; }
-  .item-review__name { font-size: 24px; } }
+  .item-review__name { font-size: 24px; }
+  .item-team-photo { height: 500px; }
+  .block-slider-team { height: 550px; } }
 @media screen and (max-width: 1140px) { .section { padding-top: 80px; padding-bottom: 80px; }
   .section-about .wrapper:before { top: -100px; }
   .link-down { top: -85px; right: 30px; }
@@ -825,7 +829,9 @@ ul { list-style: none; }
   .item-team__name span { font-size: 13px; }
   .item-review__photo { height: 400px; }
   .item-review__text { font-size: 14px; padding-top: 50px; padding-bottom: 20px; }
-  .block-slider-reviews-arrows { bottom: 0; } }
+  .block-slider-reviews-arrows { bottom: 0; }
+  .block-slider-team { height: 450px; }
+  .block-slider-team { height: 450px; } }
 @media screen and (max-width: 991px) { .top-slider__title { font-size: 38px; padding-bottom: 20px; }
   .top-slider__text { font-size: 18px; letter-spacing: 1px; }
   .slick-prev, .slick-next { height: 50px; width: 50px; }
@@ -902,7 +908,9 @@ ul { list-style: none; }
   .item-review__text:before { top: 15px; }
   .item-review__name { max-width: 100%; }
   .advantages-item p { margin: 0 auto; }
-  .item-about__title { font-size: 18px; } }
+  .item-about__title { font-size: 18px; }
+  .block-slider-team { height: auto; }
+  .section-team__right { padding-top: 0; } }
 @media screen and (max-width: 740px) { header .btn { padding: 0 15px; }
   .popup { padding-top: 70px; padding: 70px 15px 30px; }
   .nav { font-size: 18px; }
