@@ -108,6 +108,11 @@ body.overflow{
     position: fixed;
 }
 
+@media screen and (max-width: 1140px) {   
+    header.fixed{
+        padding: 5px 0;
+    }
+}
 @media screen and (max-width: 991px) {      
     header{
         padding: 25px 0;
